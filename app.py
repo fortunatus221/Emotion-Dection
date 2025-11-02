@@ -49,7 +49,5 @@ def predict():
     return "No file uploaded"
 
 if __name__ == '__main__':
-    init_db()
-    import os
-    port = int(os.environ.get("PORT", 5000))  # Render will provide this PORT
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(debug=True)
+
